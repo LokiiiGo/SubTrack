@@ -32,19 +32,19 @@ export default function HomeScreen() {
   };
 
   return (
-    <View style={{ flex: 1, backgroundColor: darkMode ? '#111827' : '#111827' }}>
+    <View style={{ flex: 1, backgroundColor: darkMode ? '#1f2937' : '#eeeeef' }}>
       {/* Botão de tema */}
       <View style={{ alignItems: 'flex-end', padding: 16 }}>
         <ThemeToggle onToggle={setDarkMode} />
       </View>
 
       {/* Título */}
-      <Text style={[styles.title, { color: darkMode ? '#fff' : '#fff' }]}>
+      <Text style={[styles.title, { color: darkMode ? '#fff' : '#000' }]}>
         Subtrack
       </Text>
 
       {/* Total mensal */}
-      <Text style={[styles.subtitle, { color: darkMode ? '#fff' : '#fff' }]}>
+      <Text style={[styles.subtitle, { color: darkMode ? '#fff' : '#000' }]}>
         Total mensal: R$ {subscriptions.reduce((acc, s) => acc + s.amount, 0).toFixed(2)}
       </Text>
 
