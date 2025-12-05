@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Animated, Easing, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 
@@ -13,7 +13,7 @@ export default function ThemeToggle({ onToggle }) {
     Animated.timing(knobAnim, {
       toValue: newValue ? 1 : 0,
       duration: 600,
-      easing: Easing.bounce, // ✅ agora funciona
+      easing: Easing.bounce, // agora funciona
       useNativeDriver: false,
     }).start();
     
@@ -62,7 +62,7 @@ export default function ThemeToggle({ onToggle }) {
           ]}
         />
       </TouchableOpacity>
-      <Text style={styles.label}>{isDark ? '🌙 Noite' : '☀️ Dia'}</Text>
+      <Text style={styles.label}>{isDark ? 'Noite' : 'Dia'}</Text>
     </View>
   );
 }
@@ -96,6 +96,6 @@ const styles = StyleSheet.create({
     marginTop: 6,
     fontSize: 14,
     fontWeight: '600',
-    color: '#374151',
+    color: '#000000ff',
   },
 });
