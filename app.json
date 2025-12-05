@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "subtrack",
+    "slug": "subtrack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/subscription-model.png",
+    "scheme": "subtrack",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/subscription-model.png",
+        "backgroundImage": "./assets/subscription-model.png",
+        "monochromeImage": "./assets/subscription-model.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "server",
+      "favicon": "./assets/subscription-model.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/subscription-model.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-sqlite"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
